@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import './index.css'
 import Nav from "./Components/Nav"
+import Tile from "./Components/Tile"
 import Search from './Components/Search'
 import Courses from './Components/Courses'
 import axios from 'axios'
@@ -25,8 +26,8 @@ function App() {
   return (
     <div className="bg-emerald-800 w-auto h-screen flex flex-col">
       <Nav />
-      <Search showCourses={showCourses} handleShowCoursesChange={handleShowCoursesChange}/>
       <Courses courses={courses} setCourses={setCourses} showCourses={showCourses} />
+      <Tile />
     </div>
   )
 }
