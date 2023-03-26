@@ -11,11 +11,11 @@ const Nav = () => {
     let [open,setOpen]=useState(false);
 
     return (
-        <div className="shadow-md w-full fixed top-0 left-0">
+        <div className="shadow-md w-full">
             <div className="md:flex items-center justify-between bg-white py-4 px-10">
                 <div className="font-bold text-2x1 cursor-pointer flex items-center gap-4 text-gray-800">
                     <img className="w-12" src="../public/usf logo.png" />
-                    <p>BullsArchive</p> 
+                    <p className='text-xl'>BullsArchive</p> 
                 </div>
                 <div onClick={()=>setOpen(!open)} className="text-3x1 absolute right-8 top-6 cursor-pointer md:hidden">
                     <i className="material-icons">{open ? "close" : "menu"}</i>
