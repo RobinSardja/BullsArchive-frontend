@@ -1,13 +1,16 @@
 import { useState } from 'react'
 import './index.css'
 
+import Nav from "./Components/Nav"
+
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="App">
-      <h1>BullsArchive</h1>
-    </div>
+    <>
+      <Nav />
+      <div className="bg-emerald-800 w-screen h-screen"></div>
+    </>
   )
 }
 
